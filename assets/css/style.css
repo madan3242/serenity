@@ -237,6 +237,15 @@ body{
     padding: 5% 10%;
 }
 
+/* container-10 */
+.container-10 .row .col-lg-8{
+    padding: 10% 0;
+}
+.container-10 .row .col-lg-8 p{
+    font-size: 1.1em;
+    line-height: 2;
+    color: hsl(188, 78%, 41%);
+}
 
 .container-11{
     background-color: hsl(221,100%,96%);
