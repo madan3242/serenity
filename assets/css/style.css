@@ -219,8 +219,6 @@ body{
 }
 
 .container-9{
-    /* background-image: linear-gradient( rgb(126, 148, 219), rgb(126, 148, 219) ) , url("../images/bg-cta.jpg"); */
-    /* linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ) */
     background-color: hsl(226,79%,57%);
     padding: 8% 0;
     color: #fff;
@@ -290,14 +288,12 @@ body{
 .container-12 form textarea{
     height: 60%;
 }
-
 .container-12 .col-lg-4{
     padding-left: 5%;
 }
 .container-12 .col-lg-4 address{
     padding-top: 5%;
 }
-
 
 
 @media screen and (max-width : 600px) {

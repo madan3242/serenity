@@ -1,3 +1,4 @@
+<!-- https://demo.themely.com/serenity-lite/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@
 </head>
 <body>
     <div class="container-fluid container-1">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
             <a class="navbar-brand" href="index.html">Serenity.</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +28,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item "><a class="nav-link active" href="index.html">Welcome</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutus">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
                 </ul>
@@ -103,7 +104,7 @@
         </div>
     </div>
 
-    <div class="container container-3">
+    <div class="container container-3" id="aboutus">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
                 <h2>About Us</h2>
@@ -125,7 +126,7 @@
         </div>
     </div>
 
-    <div class="container container-4">
+    <div class="container container-4" id="team">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
                 <h2>Team Members</h2>
@@ -200,7 +201,7 @@
         </div>
         <div class="row m-0">
             <div class="col-lg">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <div class="d-block w-100">
@@ -614,5 +615,21 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            // document.getElementById("navbar").style.top = "";
+            document.getElementById("navbar").style.backgroundColor = "#fff";
+            // document.getElementById("navbar").style.color = "#000";
+          } else {
+            document.getElementById("navbar").style.top = "0";
+            document.getElementById("navbar").style.backgroundColor = "none";
+          }
+        }
+        </script>
 </body>
 </html>
